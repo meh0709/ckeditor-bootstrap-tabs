@@ -256,7 +256,7 @@ function appendTabToElement(editor, dialog, tabsElement, numberOfTabs, i) {
       tabPanelElement = new CKEDITOR.dom.element.createFromHtml( tabPanelHtml );
 
   // add the active class to the last tab of the element
-  if (i == numberOfTabs) {
+  if (i == 1) {  //first item is active
     tabElement.addClass( 'active' );
     tabPanelElement.addClass( 'active' );
   }
